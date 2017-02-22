@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		A517CDA71E5D43C80060A18F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDA61E5D43C80060A18F /* main.m */; };
 		A517CDAA1E5D43C80060A18F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDA91E5D43C80060A18F /* AppDelegate.m */; };
-		A517CDAD1E5D43C80060A18F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDAC1E5D43C80060A18F /* ViewController.m */; };
+		A517CDAD1E5D43C80060A18F /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDAC1E5D43C80060A18F /* ContactViewController.m */; };
 		A517CDB01E5D43C80060A18F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A517CDAE1E5D43C80060A18F /* Main.storyboard */; };
-		A517CDB31E5D43C80060A18F /* ContactList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A517CDB11E5D43C80060A18F /* ContactList.xcdatamodeld */; };
 		A517CDB51E5D43C80060A18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A517CDB41E5D43C80060A18F /* Assets.xcassets */; };
 		A517CDB81E5D43C80060A18F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A517CDB61E5D43C80060A18F /* LaunchScreen.storyboard */; };
 		A517CDC31E5D43C90060A18F /* ContactListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDC21E5D43C90060A18F /* ContactListTests.m */; };
 		A517CDCE1E5D43C90060A18F /* ContactListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDCD1E5D43C90060A18F /* ContactListUITests.m */; };
+		A517CDDD1E5D46AC0060A18F /* ContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDDC1E5D46AC0060A18F /* ContactDetailViewController.m */; };
+		A517CDE01E5D48D90060A18F /* CoreDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDDF1E5D48D90060A18F /* CoreDataEngine.m */; };
+		A517CDE31E5D4ADD0060A18F /* ContactDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = A517CDE21E5D4ADD0060A18F /* ContactDetail.m */; };
+		A517CDE61E5D4DFB0060A18F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A517CDE51E5D4DFB0060A18F /* CoreGraphics.framework */; };
+		A517CDE81E5D4E0A0060A18F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A517CDE71E5D4E0A0060A18F /* CoreData.framework */; };
+		A517CDEA1E5D4E190060A18F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A517CDE91E5D4E190060A18F /* UIKit.framework */; };
+		A517CDEC1E5D4E200060A18F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A517CDEB1E5D4E200060A18F /* Foundation.framework */; };
+		A517CDEF1E5D4ECC0060A18F /* Contact.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A517CDED1E5D4ECC0060A18F /* Contact.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,22 +44,32 @@
 
 /* Begin PBXFileReference section */
 		A517CDA21E5D43C80060A18F /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A517CDA61E5D43C80060A18F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A517CDA81E5D43C80060A18F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A517CDA91E5D43C80060A18F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A517CDAB1E5D43C80060A18F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A517CDAC1E5D43C80060A18F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A517CDA61E5D43C80060A18F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A517CDA81E5D43C80060A18F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A517CDA91E5D43C80060A18F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A517CDAB1E5D43C80060A18F /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ContactViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A517CDAC1E5D43C80060A18F /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContactViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A517CDAF1E5D43C80060A18F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A517CDB21E5D43C80060A18F /* ContactList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactList.xcdatamodel; sourceTree = "<group>"; };
 		A517CDB41E5D43C80060A18F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A517CDB71E5D43C80060A18F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A517CDB91E5D43C80060A18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A517CDBE1E5D43C90060A18F /* ContactListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A517CDC21E5D43C90060A18F /* ContactListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactListTests.m; sourceTree = "<group>"; };
+		A517CDC21E5D43C90060A18F /* ContactListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContactListTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A517CDC41E5D43C90060A18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A517CDC91E5D43C90060A18F /* ContactListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A517CDCD1E5D43C90060A18F /* ContactListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactListUITests.m; sourceTree = "<group>"; };
+		A517CDCD1E5D43C90060A18F /* ContactListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContactListUITests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A517CDCF1E5D43C90060A18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A517CDDB1E5D46AC0060A18F /* ContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ContactDetailViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A517CDDC1E5D46AC0060A18F /* ContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContactDetailViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A517CDDE1E5D48D90060A18F /* CoreDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CoreDataEngine.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A517CDDF1E5D48D90060A18F /* CoreDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CoreDataEngine.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A517CDE11E5D4ADD0060A18F /* ContactDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ContactDetail.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		A517CDE21E5D4ADD0060A18F /* ContactDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ContactDetail.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		A517CDE51E5D4DFB0060A18F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A517CDE71E5D4E0A0060A18F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A517CDE91E5D4E190060A18F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A517CDEB1E5D4E200060A18F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A517CDEE1E5D4ECC0060A18F /* Contact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contact.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A517CDEC1E5D4E200060A18F /* Foundation.framework in Frameworks */,
+				A517CDEA1E5D4E190060A18F /* UIKit.framework in Frameworks */,
+				A517CDE81E5D4E0A0060A18F /* CoreData.framework in Frameworks */,
+				A517CDE61E5D4DFB0060A18F /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +108,7 @@
 				A517CDC11E5D43C90060A18F /* ContactListTests */,
 				A517CDCC1E5D43C90060A18F /* ContactListUITests */,
 				A517CDA31E5D43C80060A18F /* Products */,
+				A517CDE41E5D4DFB0060A18F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +125,8 @@
 		A517CDA41E5D43C80060A18F /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				A517CDA81E5D43C80060A18F /* AppDelegate.h */,
-				A517CDA91E5D43C80060A18F /* AppDelegate.m */,
-				A517CDAB1E5D43C80060A18F /* ViewController.h */,
-				A517CDAC1E5D43C80060A18F /* ViewController.m */,
-				A517CDAE1E5D43C80060A18F /* Main.storyboard */,
-				A517CDB41E5D43C80060A18F /* Assets.xcassets */,
-				A517CDB61E5D43C80060A18F /* LaunchScreen.storyboard */,
-				A517CDB91E5D43C80060A18F /* Info.plist */,
-				A517CDB11E5D43C80060A18F /* ContactList.xcdatamodeld */,
+				A517CDF11E5D64290060A18F /* View */,
+				A517CDF01E5D64090060A18F /* CoreData */,
 				A517CDA51E5D43C80060A18F /* Supporting Files */,
 			);
 			path = ContactList;
@@ -120,6 +135,9 @@
 		A517CDA51E5D43C80060A18F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A517CDB41E5D43C80060A18F /* Assets.xcassets */,
+				A517CDB61E5D43C80060A18F /* LaunchScreen.storyboard */,
+				A517CDB91E5D43C80060A18F /* Info.plist */,
 				A517CDA61E5D43C80060A18F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -141,6 +159,43 @@
 				A517CDCF1E5D43C90060A18F /* Info.plist */,
 			);
 			path = ContactListUITests;
+			sourceTree = "<group>";
+		};
+		A517CDE41E5D4DFB0060A18F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A517CDEB1E5D4E200060A18F /* Foundation.framework */,
+				A517CDE91E5D4E190060A18F /* UIKit.framework */,
+				A517CDE71E5D4E0A0060A18F /* CoreData.framework */,
+				A517CDE51E5D4DFB0060A18F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A517CDF01E5D64090060A18F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A517CDED1E5D4ECC0060A18F /* Contact.xcdatamodeld */,
+				A517CDDE1E5D48D90060A18F /* CoreDataEngine.h */,
+				A517CDDF1E5D48D90060A18F /* CoreDataEngine.m */,
+				A517CDE11E5D4ADD0060A18F /* ContactDetail.h */,
+				A517CDE21E5D4ADD0060A18F /* ContactDetail.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		A517CDF11E5D64290060A18F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A517CDAE1E5D43C80060A18F /* Main.storyboard */,
+				A517CDAB1E5D43C80060A18F /* ContactViewController.h */,
+				A517CDAC1E5D43C80060A18F /* ContactViewController.m */,
+				A517CDDB1E5D46AC0060A18F /* ContactDetailViewController.h */,
+				A517CDDC1E5D46AC0060A18F /* ContactDetailViewController.m */,
+				A517CDA81E5D43C80060A18F /* AppDelegate.h */,
+				A517CDA91E5D43C80060A18F /* AppDelegate.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A517CDB31E5D43C80060A18F /* ContactList.xcdatamodeld in Sources */,
-				A517CDAD1E5D43C80060A18F /* ViewController.m in Sources */,
+				A517CDEF1E5D4ECC0060A18F /* Contact.xcdatamodeld in Sources */,
+				A517CDAD1E5D43C80060A18F /* ContactViewController.m in Sources */,
 				A517CDAA1E5D43C80060A18F /* AppDelegate.m in Sources */,
 				A517CDA71E5D43C80060A18F /* main.m in Sources */,
+				A517CDE01E5D48D90060A18F /* CoreDataEngine.m in Sources */,
+				A517CDE31E5D4ADD0060A18F /* ContactDetail.m in Sources */,
+				A517CDDD1E5D46AC0060A18F /* ContactDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arvinsanmuga.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +497,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ContactList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arvinsanmuga.ContactList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +569,7 @@
 				A517CDD41E5D43C90060A18F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A517CDD51E5D43C90060A18F /* Build configuration list for PBXNativeTarget "ContactListTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +578,7 @@
 				A517CDD71E5D43C90060A18F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A517CDD81E5D43C90060A18F /* Build configuration list for PBXNativeTarget "ContactListUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,17 +587,18 @@
 				A517CDDA1E5D43C90060A18F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A517CDB11E5D43C80060A18F /* ContactList.xcdatamodeld */ = {
+		A517CDED1E5D4ECC0060A18F /* Contact.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A517CDB21E5D43C80060A18F /* ContactList.xcdatamodel */,
+				A517CDEE1E5D4ECC0060A18F /* Contact.xcdatamodel */,
 			);
-			currentVersion = A517CDB21E5D43C80060A18F /* ContactList.xcdatamodel */;
-			path = ContactList.xcdatamodeld;
+			currentVersion = A517CDEE1E5D4ECC0060A18F /* Contact.xcdatamodel */;
+			path = Contact.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

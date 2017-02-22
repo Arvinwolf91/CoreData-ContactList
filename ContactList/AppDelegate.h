@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  ContactList
 //
-//  Created by HEXA-arvin.sanmuga on 22/02/2017.
+//  Created by arvin.sanmuga on 22/02/2017.
 //  Copyright © 2017 arvin.sanmuga. All rights reserved.
 //
 
@@ -13,10 +13,12 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (readonly, strong) NSPersistentContainer *persistentContainer;
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (void)saveContext;
-
+- (NSURL *)applicationDocumentsDirectory;
 
 @end
 
